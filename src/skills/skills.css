@@ -1,0 +1,167 @@
+.skill-wraper {
+    width: 100%;
+    background-color: var(--color5);
+}
+
+.skills-heading {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--color2);
+}
+
+.skills-heading::first-letter {
+    font-size: 6rem;
+    color: var(--color1);
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    background-color: var(--color5);
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    perspective: 1200px;
+
+}
+
+.card {
+    width: 170px;
+    height: 220px;
+    background-color: var(--color6);
+    margin: 2em 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 1em;
+}
+
+.card::after {
+    border-radius: 0.4em;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 20%;
+    top: 15%;
+    border: 5px solid var(--color2);
+    border-radius: 1em;
+}
+
+.card:hover::after {
+    border-radius: 0.4em;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 20%;
+    top: 15%;
+    border: 7px solid var(--color1);
+    border-radius: 1em;
+}
+
+.skills-rate-card {
+    position: absolute;
+    bottom: 0;
+    display: none;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    border-radius: 1em;
+    transition-delay: 5s;
+}
+
+
+.card:hover .skills-rate-card {
+    
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70%;
+    background-color: var(--color1);
+    opacity: 0.8;
+}
+
+
+
+.skills-rate-card .stars {
+    display: flex;
+    justify-content: center;
+    transform: translateY(20px);
+    transition-delay: 0.6s;
+}
+
+.card:hover .skills-rate-card .stars {
+    display: flex;
+    justify-content: center;
+    transform: translateY(0);
+}
+.skills-rate-card .skill-name {
+    margin-top: 1em;
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 1.5rem;
+    transition: 0.5s;
+    transition-delay: 1s;
+}
+.skills-rate-card .rating {
+    color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: 0.5s;
+    transition-delay: 1s;
+}
+
+.card:hover .skills-rate-card .skill-name {
+    color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+    opacity: 1;
+}
+
+.card:hover .icon {
+    position: absolute;
+    top: 0.2em;
+    margin: 0 auto;
+    transition: 0.2s;
+    font-size: 3rem;
+}
+
+.card .icon {
+    font-size: 5rem;
+}
+
+.card .html {
+    color: var(--color1);
+}
+
+.card .react {
+    color: var(--color4);
+}
+
+.card .java {
+    color: black;
+
+}
+
+.card .unity {
+    color: black;
+
+}
+
+.card .js {
+    color: darkgreen;
+
+}
+
+.card h1 {
+    color: #fff;
+    font-weight: 300;
+}
