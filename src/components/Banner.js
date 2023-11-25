@@ -8,7 +8,7 @@ export default function Banner() {
         <div className='container'>
             <div className='desc'>
                 <div className='name'>
-                    <p className='greet1 text-color'>Hi 👋 there,</p>
+                    <p className='greet1 text-color'>Hi <span>👋</span>  there,</p>
                     <p className='myname text-color'>I'm <span>Anurag Chhaperwal</span></p>
                 </div>
                 <div className='fav'>

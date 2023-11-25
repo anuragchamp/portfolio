@@ -3,15 +3,17 @@ import './skills.css'
 import { SiHtml5, SiUnity } from "react-icons/si";
 import { DiJava, DiReact } from "react-icons/di";
 import { TbBrandJavascript } from "react-icons/tb"
-import { motion } from "framer-motion";
 import ReactStars from 'react-stars';
+
+
+const size = 30;
 
 export default function Skill() {
   return (
     <div className='skill-wraper'>
       <p className='skills-heading'>Skills</p>
       <div className='card-container'>
-        <motion.div
+        <div
           className='card'>
           <span className='icon html'> <SiHtml5 /></span>
           <div className='skills-rate-card'>
@@ -20,13 +22,13 @@ export default function Skill() {
             <ReactStars
               className='stars'
               count={5}
-              size={24}
+              size={size}
               value={4}
               edit={false}
               color2={'#F9F871'} />
           </div>
-        </motion.div>
-        <motion.div
+        </div>
+        <div
           className='card'>
           <span className='icon java'> <DiJava /></span>
           <div className='skills-rate-card'>
@@ -35,12 +37,12 @@ export default function Skill() {
             <ReactStars
               className='stars'
               count={5}
-              size={24}
+              size={size}
               value={3}
               edit={false}
               color2={'#F9F871'} />
           </div>
-        </motion.div>
+        </div>
         <div className='card'>
           <span className='icon react'> <DiReact /></span>
           <div className='skills-rate-card'>
@@ -50,7 +52,7 @@ export default function Skill() {
             <ReactStars
               className='stars'
               count={5}
-              size={24}
+              size={size}
               value={4}
               edit={false}
               color2={'#F9F871'} />
@@ -65,7 +67,7 @@ export default function Skill() {
             <ReactStars
               className='stars'
               count={5}
-              size={24}
+              size={size}
               value={3}
               edit={false}
               color2={'#F9F871'} />
@@ -80,9 +82,10 @@ export default function Skill() {
             <ReactStars
               className='stars'
               count={5}
-              size={24}
+              size={size}
               value={3}
               edit={false}
+              
               color2={'#F9F871'} />
           </div>
         </div>

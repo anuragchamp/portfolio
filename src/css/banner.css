@@ -33,20 +33,18 @@
     width: 50%;
 }
 
-
-
 .fav {
     display: flex;
     align-items: center;
 }
 
 .myname {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 300;
 }
 
 .myname span{
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-family: roboto;
     font-weight: 500;
 }
@@ -61,12 +59,12 @@
 }
 
 .greet2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 300;
 }
 
 .prof {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: var(--color1);
     font-weight: 400;
     font-family: roboto;
@@ -118,11 +116,10 @@
     }
 
     .myname span {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .desc p {
-
         text-align: center;
     }
 
@@ -166,17 +163,21 @@
         width: 100%;
     }
     .myname span {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .desc p {
-        font-size: 1.2rem;
+        font-size: 2rem;
         text-align: center;
     }
 
     .profile {
         width: 100%;
         min-height: 25vh;
+    }
+
+    .prof{
+        font-size: 2.5rem;
     }
 
     .proimg {
